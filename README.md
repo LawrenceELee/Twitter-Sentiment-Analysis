@@ -1,49 +1,49 @@
-#Files:
+###Files:
 ----------
 ```
 I used some geo-fencing to limit tweets from the US so that they are mainly
 in English so I can spot check them.
 ```
 
-##tweet_sentiment.py
+####tweet_sentiment.py
 Calculate overall positive or negative of a tweet.
 
 
-##term_sentiment.py
+####term_sentiment.py
 Calculate a new sentiment score for words not in AFINN list using the sentiment of the surrounding words that we know sentiments for.
 
 
-##frequency.py
+####frequency.py
 Creates frequency histogram of most used words in tweets.
 
 
-##happiest_state.py
+####happiest_state.py
 Calculates sentient for each tweet, then sums up all tweets for each state.
 
 
-##top_ten.py
+####top_ten.py
 Calculates the top ten hashtags.
 
 
-##data/sample_tweet_data.json:
+####data/sample_tweet_data.json:
 Some sample tweet data that I scraped from the twitter firehose.
 
 
-##data/AFINN-111.txt
-##data/AFINN-README.txt
+####data/AFINN-111.txt
+####data/AFINN-README.txt
 holds a list of words with their associated negative/positive value
 
 
-##out:
+####out:
 Hold results after running analysis programs.
 
 
-#Usage:
+###Usage:
 ----------
 python term_sentiment.py data/AFINN-111.txt data/sample_tweet_data.json > out/term_sentiment.out
 
 
-#Results:
+###Results:
 ----------
 ```
 Some sample results: I, the, to, a, you, my are some of the most frequent words.
