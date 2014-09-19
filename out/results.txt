@@ -1,0 +1,50 @@
+==> frequency.out <==
+[(u'i', 2997),
+ (u'the', 2283),
+ (u'to', 2102),
+ (u'a', 1846),
+ (u'you', 1553),
+ (u'my', 1509),
+ (u'and', 1173),
+ (u'in', 1076),
+ (u'me', 1072),
+ (u'is', 946),
+
+==> happiest_state.out <==
+NY
+
+==> term_sentiment.out <==
+@shalei 0
+tilton 0
+@thatssoclarisa 2
+hanging 0
+@cmk817 3
+igual 0
+tía 0
+hermann 3
+hermano 0
+⚾ 0
+
+==> top_ten.out <==
+CamTweetMe 90
+Job 89
+Jobs 64
+TweetMeCam 59
+tbt 46
+TweetMyJobs 41
+tweetmecam 28
+MTVHottest 22
+TBT 16
+VeteranJob 16
+
+==> tweet_sentiment.out <==
+0
+0
+4
+0
+0
+0
+2
+0
+0
+0
