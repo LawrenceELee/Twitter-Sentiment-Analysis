@@ -2,7 +2,8 @@
 ----------
 ```
 I used some geo-fencing to limit tweets from the US so that they are mainly
-in English so I can spot check them.
+in English so I can spot check them. However, I make no assumptions about the
+language. Using utf-8 to handle whatever characters might arise.
 ```
 
 ####tweet_sentiment.py
@@ -45,8 +46,11 @@ python term_sentiment.py data/AFINN-111.txt data/sample_tweet_data.json > out/te
 
 ###Results:
 ----------
+Some sample results
 ```
-Some sample results: I, the, to, a, you, my are some of the most frequent words.
+As expected: I, the, to, a, you, my are some of the most frequently used
+English words.
+
 frequency.out
 [(u'i', 2997),
  (u'the', 2283),
@@ -69,8 +73,11 @@ NY
 
 
 ```
-hermano (not in AFINN-111) has a neutral sentiment.
+hermano (not in AFINN-111) has a neutral sentiment. Did not filter out
+@useraccounts.
+
 term_sentiment.out
+
 @shalei 0
 tilton 0
 @thatssoclarisa 2
@@ -85,8 +92,10 @@ hermano 0
 
 
 ```
-Top ten hashtags from my time slice are below:
+Top ten hashtags (# removed) from my time slice are below:
+
 top_ten.out
+
 CamTweetMe 90
 Job 89
 Jobs 64
@@ -102,7 +111,9 @@ VeteranJob 16
 
 ```
 1st tweet in my data file has neutral sentiment, 3rd tweet has positive (4), etc.
+
 tweet_sentiment.out
+
 0
 0
 4
